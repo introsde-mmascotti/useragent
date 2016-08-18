@@ -1,7 +1,7 @@
 # Useragent
 This is the user interface for the webservices. It consists of a command line application which allows to create persons, their healthprofiles 
 and recipes using the commands listed below. The user then chooses a mealplan, the program prints some advices about it. The mealplan, 
-the adivces and the selected recipes are saved into a file.
+the advices and the selected recipes are saved into a file.
 
 ## Starting the program  
  
