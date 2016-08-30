@@ -3,8 +3,13 @@ This is the user interface for the webservices. It consists of a command line ap
 and recipes using the commands listed below. The user then chooses a mealplan, the program prints some advices about it. The mealplan, 
 the advices and the selected recipes are saved into a file.
 
-## Starting the program  
- 
+## Compiling and starting the program  
+For compiling call the ant target  
+
+     ant compile
+
+Change to the build directory and start the program:  
+
      java shell.Shell  [id]  
 
 The person id parameter _[id]_ is optional. If ommitted the program will ask for a valid person id or for creating a new person. 
