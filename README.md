@@ -26,7 +26,7 @@ Eventual corrections of the person data can be done using the command ```person 
 
 ###Creating recipes
 Recipes can be created using the command ```recipe create```, corrections of a previously created recipe can be done 
-with ```recipe create```.
+with ```recipe update```.
 
 ###Choosing a mealplan a getting the advice
 The mealplan can be created with the command ```mealplan```. The user is asked to update the healthprofile, then he composes the mealplan 
@@ -39,7 +39,7 @@ NOTE: All commands do not need any parameters, additional informations must be p
 * ```person view``` view the person data
 * ```person update``` update the person data
 * ```healthprofile view``` view the current healthprofile (height, weight, PAL factor)
-* ```healthprofile update``` update the healhprofile
+* ```healthprofile update``` update the healthprofile
 * ```healthprofile history``` view the history of a measure
 * ```recipe create```  create a new recipe
 * ```recipe update``` update a recipe (only recipes created by the user can be updated)
