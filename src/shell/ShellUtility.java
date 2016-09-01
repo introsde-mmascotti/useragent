@@ -135,16 +135,14 @@ public class ShellUtility {
 	 */
 	public static XMLGregorianCalendar readXMLGregorianCalendar (String message, String error_message, Date default_value, Date min, Date max) throws IOException {
 		Date d = readDate(message, error_message, default_value, min, max);
-		GregorianCalendar c = new GregorianCalendar();
-		c.setTime(d);
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
 		
 		XMLGregorianCalendar ret = null;
 		try {
-			ret = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+			ret = DatatypeFactory.newInstance().newXMLGregorianCalendar(sdf.format(d));
 		} catch (DatatypeConfigurationException e) {
 			e.printStackTrace();
 		}
-		
 		return ret;
 	}
 	
